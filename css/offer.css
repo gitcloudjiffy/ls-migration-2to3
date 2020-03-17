@@ -1,0 +1,407 @@
+@font-face {
+  font-family: 'BRLNSR';
+  src: url('./BRLNSR.eot');
+  src: local('BRLNSR'), url('font/BRLNSR.woff') format('woff'), url('font/BRLNSR.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_12421">Text with this font applied</p> */
+.fontsforweb_brlnsr {
+  font-family: 'BRLNSR' !important;
+}
+.hovereffect {
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+        border-radius: 5px;
+        }
+        .hovereffect .overlay {
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        padding: .5em;
+        height: 3.75em;
+        background: #fff;/*#79FAC4*/
+        color: #3c4a50;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0,113%,0);
+        transform: translate3d(0,100%,0);
+        border-top: 1px darkgray dashed;
+        /*    visibility: hidden;*/
+        z-index: 100;
+        }
+        .hovereffect:hover
+        {
+        box-shadow: rgba(45, 54, 76, 0.22) 0px 2px 3px 0px;
+        }
+        .hovereffect:hover .overlay p
+        {
+        padding: 9px 0;
+        }
+        .hovereffect img {
+        display: block;
+        position: relative;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        -webkit-transition: all .8s ease-in-out;
+        }
+        .hovereffect:hover img {
+        -webkit-transform: translate3d(0,-4%,0);
+        transform: translate3d(0,-4%,0);
+        filter: none;
+        -webkit-filter: grayscale(0);
+        }
+        .hovereffect .asp-offer-info{
+        display: block;
+        position: relative;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+        filter: gray; /* IE5+ */
+        -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        -webkit-transition: all .8s ease-in-out;
+        }
+        .hovereffect:hover .asp-offer-info{
+        -webkit-transform: translate3d(0,-4%,0);
+        transform: translate3d(0,-4%,0);
+        filter: none;
+        -webkit-filter: grayscale(0);
+        }
+        .hovereffect:hover .overlay h2 {
+        text-transform: uppercase;
+        color: #000085;
+        text-align: center;
+        position: relative;
+        font-size: 17px;
+        padding: 10px;
+        /*background: rgba(0, 0, 0, 0.6);*/
+        float: left;
+        margin: 0px;
+        display: inline-block;
+        border: 1px dashed #35ac2c;
+        }
+        .hovereffect a.info {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #fff;
+        margin: 50px 0 0 0;
+        background-color: transparent;
+        }
+        .hovereffect a.info:hover {
+        box-shadow: 0 0 5px #fff;
+        }
+        .hovereffect:hover .overlay,
+        .hovereffect:hover .overlay h2
+        {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        }
+        .hovereffect:hover .overlay span.product
+        {
+        padding: 5px 0;
+        font-size: 14px;
+        font-weight: bold;
+        }
+        .hovereffect:hover .overlay h2 {
+        -webkit-transition-delay: 0.05s;
+        transition-delay: 0.05s;
+        cursor: pointer;
+        }
+        #offerwrap
+        {
+        padding: 20px 0 0 0;
+        background-color: #ececdb;
+        }
+        #offerwrap .span4
+        {
+        margin-bottom: 20px;
+        }
+        /* new */
+        #couponsWrapper
+        {
+        height: 100%;
+        display: none;
+        position: relative;
+        }
+        .asp-sas-display-block {
+        display: block !important;
+        }
+        #couponsWrapper .asp-coupon-item-active-with-code, #couponsWrapper .asp-coupon-item, #couponsWrapper .asp-coupon-item-active {
+        transition: top cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        #couponsWrapper .asp-coupon-item, .a-sp-panel .a-sp-items-wrapper #othersWrapper .asp-coupon-item,#couponsWrapper .asp-coupon-item-active, .a-sp-panel .a-sp-items-wrapper #othersWrapper .asp-coupon-item-active, #couponsWrapper .asp-coupon-item-active-with-code, #couponsWrapper .asp-redirect-item{
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+        margin-bottom: 6px;
+        z-index: 24;
+        display: grid;
+        grid-template-columns: 326px;
+        grid-template-rows: max-content 18px 26px;
+        height: max-content;
+        width: 326px;
+        min-height: 104px;
+        box-sizing: content-box;
+        border-radius: 0px;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        }
+        #couponsWrapper .asp-coupon-item:hover .asp-coupon-top, #couponsWrapper .asp-coupon-item-active:hover .asp-coupon-top, #couponsWrapper .asp-coupon-item-active-with-code:hover .asp-coupon-top, #couponsWrapper .asp-redirect-item:hover .asp-coupon-top{
+        box-shadow: rgba(45, 54, 76, 0.4) 0px 2px 8px 1px;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-top, #couponsWrapper .asp-coupon-item-active .asp-coupon-top,  #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-top, #couponsWrapper .asp-redirect-item .asp-coupon-top {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: grid;
+        grid-template-columns: 112px 8px 1fr;
+        height: max-content;
+        width: 306px;
+        min-height: 60px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(45, 54, 76, 0.22) 0px 2px 3px 0px;
+        box-sizing: content-box;
+        cursor: default;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        padding: 20px 10px 10px 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-separator, #couponsWrapper .asp-coupon-item-active .asp-coupon-separator, #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-separator, #couponsWrapper .asp-redirect-item .asp-coupon-separator{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: grid;
+        grid-template-columns: 10px 1fr 10px;
+        grid-template-rows: 10px 10px;
+        height: 20px;
+        width: 326px;
+        background-color: transparent;
+        box-sizing: content-box;
+        cursor: default;
+        z-index: 2147483644;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-separator .asp-coupon-separator-left-top, #couponsWrapper .asp-coupon-item-active .asp-coupon-separator .asp-coupon-separator-left-top, #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-separator .asp-coupon-separator-left-top,#couponsWrapper .asp-redirect-item .asp-coupon-separator .asp-coupon-separator-left-top {
+        height: 10px;
+        width: 10px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        cursor: default;
+        z-index: 23;
+        box-sizing: border-box;
+        background: -webkit-radial-gradient(0px 100%, circle cover, rgba(242, 242, 246, 0) 7px, rgba(45, 54, 76, 0.1) 0.15px, rgb(255, 255, 255) 8px) no-repeat;
+        background-repeat: no-repeat;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-separator .asp-coupon-separator-left-bottom, #couponsWrapper .asp-coupon-item-active .asp-coupon-separator .asp-coupon-separator-left-bottom,#couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-separator .asp-coupon-separator-left-bottom, #couponsWrapper .asp-redirect-item .asp-coupon-separator .asp-coupon-separator-left-bottom {
+        height: 10px;
+        width: 10px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        cursor: default;
+        z-index: 23;
+        box-sizing: border-box;
+        background: -webkit-radial-gradient(0px 0px, circle cover, rgba(242, 242, 246, 0) 7px, rgba(45, 54, 76, 0.06) 0.05px, rgb(255, 255, 255) 8px) no-repeat;
+        background-repeat: no-repeat;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-separator .asp-coupon-separator-right-top,#couponsWrapper .asp-coupon-item-active .asp-coupon-separator .asp-coupon-separator-right-top,#couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-separator .asp-coupon-separator-right-top,#couponsWrapper .asp-redirect-item .asp-coupon-separator .asp-coupon-separator-right-top {
+        height: 10px;
+        width: 10px;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        cursor: default;
+        z-index: 23;
+        box-sizing: border-box;
+        background: -webkit-radial-gradient(100% 100%, circle cover, rgba(242, 242, 246, 0) 7px, rgba(45, 54, 76, 0.1) 0.15px, rgb(255, 255, 255) 8px) no-repeat;
+        background-repeat: no-repeat;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-separator .asp-coupon-separator-right-bottom, #couponsWrapper .asp-coupon-item-active .asp-coupon-separator .asp-coupon-separator-right-bottom, #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-separator .asp-coupon-separator-right-bottom, #couponsWrapper .asp-redirect-item .asp-coupon-separator .asp-coupon-separator-right-bottom {
+        height: 10px;
+        width: 10px;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        cursor: default;
+        z-index: 23;
+        box-sizing: border-box;
+        background: -webkit-radial-gradient(100% 0px, circle cover, rgba(242, 242, 246, 0) 7px, rgba(45, 54, 76, 0.06) 0.05px, rgb(255, 255, 255) 8px) right bottom no-repeat;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-bottom, #couponsWrapper .asp-coupon-item-active .asp-coupon-bottom, #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-bottom, #couponsWrapper .asp-redirect-item .asp-coupon-bottom, #couponsWrapper .asp-coupon-item .asp-coupon-bottom-without-code, #couponsWrapper .asp-coupon-item-active .asp-coupon-bottom-without-code, #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-bottom-without-code, #couponsWrapper .asp-redirect-item .asp-coupon-bottom-without-code {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 26px;
+        width: 326px;
+        max-height: 44px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(45, 54, 76, 0.22) 0px 2px 3px 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-sizing: content-box !important;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        padding-top: 7px;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-separator .asp-coupon-separator-middle-top, #couponsWrapper .asp-coupon-item-active .asp-coupon-separator .asp-coupon-separator-middle-top, #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-separator .asp-coupon-separator-middle-top, #couponsWrapper .asp-redirect-item .asp-coupon-separator .asp-coupon-separator-middle-top {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        background-color: rgb(255, 255, 255);
+        height: 1px;
+        padding-top: 9px;
+        width: 100%;
+        cursor: default;
+        z-index: 23;
+        box-sizing: content-box !important;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-separator .asp-coupon-separator-middle-bottom, #couponsWrapper .asp-coupon-item-active .asp-coupon-separator .asp-coupon-separator-middle-bottom, #couponsWrapper .asp-coupon-item-active-with-code .asp-coupon-separator .asp-coupon-separator-middle-bottom, #couponsWrapper .asp-redirect-item .asp-coupon-separator .asp-coupon-separator-middle-bottom {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        height: 10px;
+        background-color: rgb(255, 255, 255);
+        padding-top: 9px;
+        width: 100%;
+        cursor: default;
+        z-index: 23;
+        box-sizing: border-box !important;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-top .asp-offer-info
+        {
+        text-align: center;
+        }
+        #couponsWrapper .asp-coupon-item .asp-coupon-top .asp-offer-info h2
+        {
+        font-size: 54px;
+        color: #ed3238;
+        font-family: 'BRLNSR' !important;
+        line-height: 42px;
+        margin: 10px 0 10px 0;
+        }
+        #couponsWrapper .coupon
+        {
+        font-size: 17px;
+        font-weight: 500;
+        color: #282828;
+        line-height: 16px;
+        text-align: center;
+        }
+        #couponsWrapper .asp-coupon-item-label-full-size
+        {
+        padding-left: 15px;
+        }
+        #toast {
+        visibility: hidden;
+        max-width: 50px;
+        height: 50px;
+        /*margin-left: -125px;*/
+        margin: auto;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        position: fixed;
+        z-index: 9999;
+        left: 0;right:0;
+        bottom: 30px;
+        font-size: 17px;
+        white-space: nowrap;
+        }
+        #toast #copyicn{
+        width: 50px;
+        height: 50px;
+        float: left;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        box-sizing: border-box;
+        background-color: #111;
+        color: #fff;
+        }
+        #toast #desc{
+        color: #fff;
+        padding: 16px;
+        overflow: hidden;
+        white-space: nowrap;
+        }
+        #toast.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+        }
+        @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+        }
+        @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+        }
+        @-webkit-keyframes expand {
+        from {min-width: 50px}
+        to {min-width: 350px}
+        }
+        @keyframes expand {
+        from {min-width: 50px}
+        to {min-width: 350px}
+        }
+        @-webkit-keyframes stay {
+        from {min-width: 350px}
+        to {min-width: 350px}
+        }
+        @keyframes stay {
+        from {min-width: 350px}
+        to {min-width: 350px}
+        }
+        @-webkit-keyframes shrink {
+        from {min-width: 350px;}
+        to {min-width: 50px;}
+        }
+        @keyframes shrink {
+        from {min-width: 350px;}
+        to {min-width: 50px;}
+        }
+        @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 60px; opacity: 0;}
+        }
+        @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 60px; opacity: 0;}
+        }
+        @media (min-width: 1200px)
+        {
+        #offerwrap .span4
+        {
+        width: 360px !important;
+        }
+        }
